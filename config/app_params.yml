@@ -1,0 +1,10 @@
+development: &defaults
+  api_key: 'b07a12df7d52e6c118e5d47d3f9e60135b109a1f'
+  api_url: 'http://api.sponsorpay.com/feed/v1/offers.json'
+  api_sign_name: 'x-sponsorpay-response-signature'
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

@@ -1,0 +1,1 @@
+APP = YAML.load(ERB.new(File.read("#{Rails.root}/config/app_params.yml")).result)[Rails.env]

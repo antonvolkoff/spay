@@ -1,0 +1,8 @@
+= render 'form'
+
+- if @offers
+  - if @offers.empty?
+    = render 'no_offers'
+  - else
+    - @offers.each do |offer|
+      = render 'offer', { offer: offer }
